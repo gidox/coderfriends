@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-	<title>Web Agency</title>
+	<title>CoderFriends | Desarrollo de Software y Mobile Apps</title>
+	<meta name="description" content="Especialistas en desarrollo de software, Diseño, aplicaciones móviles y todo lo relacionado con TI"/>
+	<meta property="og:locale" content="es_MX" />
+	<meta property="og:locale:alternate" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content=" Desarrollo de Software y Mobile Apps - CoderFriends" />
+	<meta property="og:description" content="Especialistas en desarrollo de software, Diseño, aplicaciones móviles y todo lo relacionado con TI" />
 	<meta charset="UTF-8">
 	<link rel="shortcut icon" href="img/logos/favicon.ico" />	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -237,7 +243,7 @@
 
 
 <!-- Pie Charts Section START -->
-<div class="section-block-parallax jarallax" data-jarallax data-speed="0.6"  style="background-image: url('http://via.placeholder.com/1500x700');">
+<div class="section-block-parallax jarallax" data-jarallax data-speed="0.6"  style="background-image: url('./img/content/bgs/codebg.jpg');">
 	<div class="container">
 		<div class="row">			
 			<div class="col-md-6 col-sm-12 col-12">
@@ -246,13 +252,13 @@
 				</div>
 			</div>					
 			<div class="col-md-6 col-sm-12 col-12">
-				<div class="section-heading left-holder mt-15">
-					<h4 class="bold">Where creativity meets technology. Open up your business to new possibilities.</h4>
+				<div class="section-heading left-holder mt-15" >
+					<h4 class="bold" style="color: #FFF">Where creativity meets technology. Open up your business to new possibilities.</h4>
 					<div class="section-heading-line"></div>
 				</div>
 
 				<div class="text-content-big">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					<p style="color: #FFF">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse. Ut enim ad minim veniam.</p>
@@ -263,33 +269,33 @@
 					<div class="col-md-4 col-sm-4 col-12">
 						<div class="pie-chart">
 							<div class="chart-percent">
-								<span class="chart" data-percent="70" data-width="2" data-size="120" data-color="#2387ea">
+								<span class="chart" data-percent="70" data-width="2" data-size="120" data-color="#00cc33" style="color: #FFF">
 									<span class="percent"></span>
 								</span>
 							</div>	
-							<h4>Content Marketing</h4>
+							<h4 style="color: #FFF">Content Marketing</h4>
 						</div>		
 					</div>
 
 					<div class="col-md-4 col-sm-4 col-12">
 						<div class="pie-chart">
 							<div class="chart-percent">
-								<span class="chart" data-percent="80" data-width="2" data-size="120" data-color="#2387ea">
+								<span class="chart" data-percent="80" data-width="2" data-size="120" data-color="#00cc33" style="color: #FFF">
 									<span class="percent"></span>
 								</span>
 							</div>
-							<h4>SEO Optimization</h4>
+							<h4 style="color: #FFF" >SEO Optimization</h4>
 						</div>		
 					</div>	
 
 					<div class="col-md-4 col-sm-4 col-12">
 						<div class="pie-chart">
 							<div class="chart-percent">
-								<span class="chart" data-percent="75" data-width="2" data-size="120" data-color="#2387ea">
+								<span class="chart" data-percent="75" data-width="2" data-size="120" data-color="#00cc33" style="color: #FFF">
 									<span class="percent"></span>
 								</span>
 							</div>
-							<h4>Web Development</h4>
+							<h4 style="color: #FFF">Web Development</h4>
 						</div>		
 					</div>													
 				</div>
