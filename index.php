@@ -205,7 +205,7 @@
 					</div>
 					<div class="feature-float-content">
 						<h4>SEO Optimization</h4>
-						<p>Asegúramos de que su sitio web reciba tráfico relevante y necesario para promocionar su negocio, sus marcas, sus trabajos y sus ventas. Con un SEO sólido y el poder de Google AdWords, asegúrese de que su mensaje llegue a los usuarios importantes de su marca.
+						<p>Asegúramos de que su sitio web reciba tráfico relevante y necesario para promocionar su negocio, sus marcas, sus trabajos y sus ventas. Con un SEO sólido y el poder de Google AdWords, nos asegúramos de que su mensaje llegue a los usuarios importantes de su marca.
 APRENDE MÁS.</p>
 					</div>
 				</div>			
