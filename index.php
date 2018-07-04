@@ -163,11 +163,23 @@
 			<div class="col-md-4 col-sm-6 col-12">
 				<div class="feature-float clearfix">
 					<div class="feature-float-icon">
+						<i class="icon-computer"></i>
+					</div>
+					<div class="feature-float-content">
+						<h4>DESARROLLO WEB Y DISEÑO</h4>
+						<p>Asegúramos de que su empresa mantenga sus puertas abiertas y sirva a los clientes las 24 horas del día, los 365 días del año. Ofrecemos diseño y desarrollo de páginas web en HTML5, WordPress, plataformas de comercio electrónico y más. APRENDE MÁS...</p>
+					</div>
+				</div>			
+			</div>
+
+			<div class="col-md-4 col-sm-6 col-12">
+				<div class="feature-float clearfix">
+					<div class="feature-float-icon">
 						<i class="icon-key"></i>
 					</div>
 					<div class="feature-float-content">
 						<h4>Estrategia & Planeacion</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+						<p>Detectamos el problema o la necesidad de marca, realizamos un análisis exhaustivo de las características del cliente, conceptualizamos, diseñamos y producimos una propuesta a la altura de las necesidades. . APRENDE MÁS</p>
 					</div>
 				</div>			
 			</div>
@@ -179,22 +191,12 @@
 					</div>
 					<div class="feature-float-content">
 						<h4>UI/UX Design</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+						<p>Nos enfocamos en diseñar productos útiles, usables y deseables, lo cual influye en que el usuario se sienta satisfecho, feliz y encantado. APRENDE MÁS.</p>
 					</div>
 				</div>			
 			</div>
 
-			<div class="col-md-4 col-sm-6 col-12">
-				<div class="feature-float clearfix">
-					<div class="feature-float-icon">
-						<i class="icon-computer"></i>
-					</div>
-					<div class="feature-float-content">
-						<h4>Web Development</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-					</div>
-				</div>			
-			</div>	
+				
 
 			<div class="col-md-4 col-sm-6 col-12">
 				<div class="feature-float clearfix">
@@ -203,7 +205,8 @@
 					</div>
 					<div class="feature-float-content">
 						<h4>SEO Optimization</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+						<p>Asegúramos de que su sitio web reciba tráfico relevante y necesario para promocionar su negocio, sus marcas, sus trabajos y sus ventas. Con un SEO sólido y el poder de Google AdWords, asegúrese de que su mensaje llegue a los usuarios importantes de su marca.
+APRENDE MÁS.</p>
 					</div>
 				</div>			
 			</div>
@@ -215,7 +218,7 @@
 					</div>
 					<div class="feature-float-content">
 						<h4>Mobile APPS</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+						<p>Desarrollamos aplicaciones Moviles nativas para IOS, Android o bien utilizando React Native. APRENDE MÁS.</p>
 					</div>
 				</div>			
 			</div>
@@ -227,7 +230,7 @@
 					</div>
 					<div class="feature-float-content">
 						<h4>Content Marketing</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+						<p>Construimos lazos más fuertes con los clientes actuales, demostramos los beneficios y contamos historias interesantes sobre su marca y productos. APRENDE MÁS.</p>
 					</div>
 				</div>			
 			</div>														
