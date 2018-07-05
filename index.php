@@ -31,13 +31,13 @@
 	<link rel="stylesheet" href="css/animate.css">	
 
 	<!-- Owl Carousel  -->
-    <link rel="stylesheet" href="css/owl.carousel.css"> 
+	<link rel="stylesheet" href="css/owl.carousel.css"> 
 
-    <!-- Swiper Slider Styles -->
-    <link rel="stylesheet" href="css/slider.css">        
+	<!-- Swiper Slider Styles -->
+	<link rel="stylesheet" href="css/slider.css">        
 
-    <!-- Navbar Styles -->
-    <link rel="stylesheet" type="text/css" href="css/navigation-3.css" id="navigation_menu">
+	<!-- Navbar Styles -->
+	<link rel="stylesheet" type="text/css" href="css/navigation-3.css" id="navigation_menu">
 	
 	<!-- Main Styles -->
 	<link rel="stylesheet" type="text/css" href="css/default.css">
@@ -97,14 +97,14 @@
 		<!-- Slide 1 Start -->
 		<div class="swiper-slide black-overlay-50" style="background-image:url('./img/content/bgs/slide1.png');">
 			<div class="container">
-                <div class="slider-content center-holder mt-60-md">
-                	<h4 class="extra-light uppercase animated fadeInDown">Logra Realidad tu Idea</h4>
-                    <h2 class="extra-light uppercase animated fadeInDown">Agencia de Desarrollo WEB, Mobile APPS y Diseño</h2>
-                    <h5 class="light uppercase animated fadeInUp">Creando soluciones efectivas y garantizadas.</h5>	
-                    <div class="animated fadeInUp mt-30">
-                        <a href="#" class="primary-button semi-rounded button-lg w-300">Empieza tu Proyecto</a>
-                    </div>
-                </div>
+				<div class="slider-content center-holder mt-60-md">
+					<h4 class="extra-light uppercase animated fadeInDown">Logra Realidad tu Idea</h4>
+						<h2 class="extra-light uppercase animated fadeInDown">Agencia de Desarrollo WEB, Mobile APPS y Diseño</h2>
+						<h5 class="light uppercase animated fadeInUp">Creando soluciones efectivas y garantizadas.</h5>	
+						<div class="animated fadeInUp mt-30">
+								<a href="#" class="primary-button semi-rounded button-lg w-300">Empieza tu Proyecto</a>
+						</div>
+				</div>
 			</div>
 		</div>
 		<!-- Slide 1 End -->
@@ -112,14 +112,14 @@
 		<!-- Slide 2 Start -->	
 		<div class="swiper-slide black-overlay-50" style="background-image:url('./img/content/bgs/slide3.png');">
 			<div class="container">
-                <div class="slider-content center-holder mt-60-md">
-                	<h4 class="extra-light uppercase animated fadeInDown">Lleva tu idea a otro nivel</h4>
-                    <h2 class="extra-light uppercase animated fadeInDown">Desarrollamos Software Personalizado</h2>
-                    <h5 class="light uppercase animated fadeInUp">Usamos las ultimas tendencias en desarrollo de sofware</h5>	
-                    <div class="animated fadeInUp mt-30">
-                        <a href="#" class="white-button semi-rounded button-lg w-300">Descubre Más</a>
-                    </div>
-                </div>
+				<div class="slider-content center-holder mt-60-md">
+					<h4 class="extra-light uppercase animated fadeInDown">Lleva tu idea a otro nivel</h4>
+						<h2 class="extra-light uppercase animated fadeInDown">Desarrollamos Software Personalizado</h2>
+						<h5 class="light uppercase animated fadeInUp">Usamos las ultimas tendencias en desarrollo de sofware</h5>	
+						<div class="animated fadeInUp mt-30">
+								<a href="#" class="white-button semi-rounded button-lg w-300">Descubre Más</a>
+						</div>
+				</div>
 			</div>
 		</div>
 		<!-- Slide 2 End -->
@@ -127,14 +127,14 @@
 		<!-- Slide 3 Start -->	
 		<div class="swiper-slide black-overlay-70" style="background-image:url('./img/content/bgs/slide2.png');">
 			<div class="container">
-                <div class="slider-content center-holder mt-60-md">
-                	<h4 class="extra-light uppercase animated fadeInDown">Te acesoramos en el desarrollo de tu idea</h4>
-                    <h2 class="extra-light uppercase animated fadeInDown">Crea un MVP y sal al mercado</h2>
-                    <h5 class="light uppercase animated fadeInUp">Digitally forward creative. Connected creativity. We are intelligence in action.</h5>	
-                    <div class="animated fadeInUp mt-30">
-                        <a href="#" class="primary-button semi-rounded button-lg w-300">Contáctanos</a>
-                    </div>
-                </div>
+				<div class="slider-content center-holder mt-60-md">
+					<h4 class="extra-light uppercase animated fadeInDown">Te acesoramos en el desarrollo de tu idea</h4>
+						<h2 class="extra-light uppercase animated fadeInDown">Crea un MVP y sal al mercado</h2>
+						<h5 class="light uppercase animated fadeInUp">Digitally forward creative. Connected creativity. We are intelligence in action.</h5>	
+						<div class="animated fadeInUp mt-30">
+								<a href="#" class="primary-button semi-rounded button-lg w-300">Contáctanos</a>
+						</div>
+				</div>
 			</div>
 		</div>
 		<!-- Slide 3 End -->			
@@ -166,7 +166,7 @@
 						<i class="icon-computer"></i>
 					</div>
 					<div class="feature-float-content">
-						<h4>DESARROLLO WEB Y DISEÑO</h4>
+						<h4>Diseño & Desarrollo WEB </h4>
 						<p>Asegúramos de que su empresa mantenga sus puertas abiertas y sirva a los clientes las 24 horas del día, los 365 días del año. Ofrecemos diseño y desarrollo de páginas web en HTML5, WordPress, plataformas de comercio electrónico y más. APRENDE MÁS...</p>
 					</div>
 				</div>			
@@ -178,7 +178,7 @@
 						<i class="icon-key"></i>
 					</div>
 					<div class="feature-float-content">
-						<h4>Estrategia & Planeacion</h4>
+						<h4>Estrategia & Planeación</h4>
 						<p>Detectamos el problema o la necesidad de marca, realizamos un análisis exhaustivo de las características del cliente, conceptualizamos, diseñamos y producimos una propuesta a la altura de las necesidades. . APRENDE MÁS</p>
 					</div>
 				</div>			
@@ -205,8 +205,7 @@
 					</div>
 					<div class="feature-float-content">
 						<h4>SEO Optimization</h4>
-						<p>Asegúramos de que su sitio web reciba tráfico relevante y necesario para promocionar su negocio, sus marcas, sus trabajos y sus ventas. Con un SEO sólido y el poder de Google AdWords, nos asegúramos de que sus mensajes lleguen a los usuarios importantes de su marca.
-APRENDE MÁS.</p>
+						<p>Asegúramos de que su sitio web reciba tráfico relevante y necesario para promocionar su negocio, sus marcas, sus trabajos y sus ventas. Con un SEO sólido y el poder de Google AdWords. APRENDE MÁS.</p>
 					</div>
 				</div>			
 			</div>
@@ -233,7 +232,20 @@ APRENDE MÁS.</p>
 						<p>Construimos lazos más fuertes con los clientes actuales, demostramos los beneficios y contamos historias interesantes sobre su marca y productos. APRENDE MÁS.</p>
 					</div>
 				</div>			
-			</div>														
+			</div>	
+
+			<div class="col-md-4 col-sm-6 col-12">
+				<div class="feature-float clearfix">
+					<div class="feature-float-icon">
+						<i class="icon-aim"></i>
+					</div>
+					<div class="feature-float-content">
+						<h4>Contrata un Profesional</h4>
+						<p>Nos involucramos en tu proyecto y en tu negocio, brindando soluciones a tus necesidades.. APRENDE MÁS.</p>
+					</div>
+				</div>			
+			</div>	
+
 		</div>
 
 		<!-- <div class="center-holder mt-20">
