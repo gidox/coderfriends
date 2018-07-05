@@ -68,7 +68,7 @@
 <header id="nav-transparent">
 	<nav id="navigation4" class="container navigation">
 		<div class="nav-header">
-			<a class="nav-brand" href="index.html">
+			<a class="nav-brand" href="index.php">
 				<img src="img/logos/logo-light.png" alt="logo" id="light_logo" style="height: 50px;">
 				<img src="img/logos/logo.png" alt="logo" id="main_logo" style="height: 50px;">
 			</a>
@@ -76,19 +76,18 @@
 		</div>
 		<div class="nav-menus-wrapper">
 			<ul class="nav-menu align-to-right">
-				<li><a href="#">Inicio</a></li>								
-				<li><a href="#">Servicios</a></li>								
-				<li><a href="#">Nosotros</a></li>								
-				<li><a href="#">Portafolio</a></li>								
-				<li><a href="#">Contáctenos</a></li>								
-											
-											
+				<li><a href="index.php">Inicio</a></li>
+				<li><a href="#servicios">Servicios</a></li>								
+				<li><a href="#portafolio">Portafolio</a></li>
+				<li><a href="#nosotros">Nosotros</a></li>								
+				<li><a href="#tuproyecto">Tu Proyecto</a></li>								
+				<li><a href="#contactus">Contáctenos</a></li>								
 			</ul>
 		</div>					
 	</nav>	
 </header>	
 <!-- Navbar END -->
-
+  
 
 
 <!-- Slider START -->
@@ -150,7 +149,7 @@
 
 
 <!-- Features Section START -->
-<div class="section-block">
+<div class="section-block" id="servicios">
 	<div class="container">
 		<div class="section-heading center-holder">
 			<small>5 años ofreciendo lo mejor</small>
@@ -167,7 +166,7 @@
 					</div>
 					<div class="feature-float-content">
 						<h4>Diseño & Desarrollo WEB </h4>
-						<p>Asegúramos de que su empresa mantenga sus puertas abiertas y sirva a los clientes las 24 horas del día, los 365 días del año. Ofrecemos diseño y desarrollo de páginas web en HTML5, WordPress, plataformas de comercio electrónico y más. APRENDE MÁS...</p>
+						<p>Asegúramos de que su empresa mantenga sus puertas abiertas y sirva a los clientes las 24 horas del día, los 365 días del año. Ofrecemos diseño y desarrollo de páginas web en HTML5, WordPress, plataformas de comercio electrónico y más.</p>
 					</div>
 				</div>			
 			</div>
@@ -179,7 +178,7 @@
 					</div>
 					<div class="feature-float-content">
 						<h4>Estrategia & Planeación</h4>
-						<p>Detectamos el problema o la necesidad de marca, realizamos un análisis exhaustivo de las características del cliente, conceptualizamos, diseñamos y producimos una propuesta a la altura de las necesidades. . APRENDE MÁS</p>
+						<p>Detectamos el problema o la necesidad de marca, realizamos un análisis exhaustivo de las características del cliente, conceptualizamos, diseñamos y producimos una propuesta a la altura de las necesidades.</p>
 					</div>
 				</div>			
 			</div>
@@ -191,7 +190,7 @@
 					</div>
 					<div class="feature-float-content">
 						<h4>UI/UX Design</h4>
-						<p>Nos enfocamos en diseñar productos útiles, usables y deseables, lo cual influye en que el usuario se sienta satisfecho, feliz y encantado. APRENDE MÁS.</p>
+						<p>Nos enfocamos en diseñar productos útiles, usables y deseables, lo cual influye en que el usuario se sienta satisfecho, feliz y encantado.</p>
 					</div>
 				</div>			
 			</div>
@@ -205,7 +204,7 @@
 					</div>
 					<div class="feature-float-content">
 						<h4>SEO Optimization</h4>
-						<p>Asegúramos de que su sitio web reciba tráfico relevante y necesario para promocionar su negocio, sus marcas, sus trabajos y sus ventas. Con un SEO sólido y el poder de Google AdWords. APRENDE MÁS.</p>
+						<p>Asegúramos de que su sitio web reciba tráfico relevante y necesario para promocionar su negocio, sus marcas, sus trabajos y sus ventas. Con un SEO sólido y el poder de Google AdWords.</p>
 					</div>
 				</div>			
 			</div>
@@ -217,7 +216,7 @@
 					</div>
 					<div class="feature-float-content">
 						<h4>Mobile APPS</h4>
-						<p>Desarrollamos aplicaciones Moviles nativas para IOS, Android o bien utilizando React Native. APRENDE MÁS.</p>
+						<p>Desarrollamos aplicaciones Moviles nativas para IOS, Android o bien utilizando React Native.</p>
 					</div>
 				</div>			
 			</div>
@@ -229,7 +228,7 @@
 					</div>
 					<div class="feature-float-content">
 						<h4>Content Marketing</h4>
-						<p>Construimos lazos más fuertes con los clientes actuales, demostramos los beneficios y contamos historias interesantes sobre su marca y productos. APRENDE MÁS.</p>
+						<p>Construimos lazos más fuertes con los clientes actuales, demostramos los beneficios y contamos historias interesantes sobre su marca y productos.</p>
 					</div>
 				</div>			
 			</div>	
@@ -241,7 +240,7 @@
 					</div>
 					<div class="feature-float-content">
 						<h4>Contrata un Profesional</h4>
-						<p>Nos involucramos en tu proyecto y en tu negocio, brindando soluciones a tus necesidades.. APRENDE MÁS.</p>
+						<p>Nos involucramos en tu proyecto y en tu negocio, brindando soluciones a tus necesidades.</p>
 					</div>
 				</div>			
 			</div>	
@@ -257,74 +256,10 @@
 
 
 
-<!-- Pie Charts Section START -->
-<div class="section-block-parallax jarallax" data-jarallax data-speed="0.6"  style="background-image: url('./img/content/bgs/codebg.jpg');">
-	<div class="container">
-		<div class="row">			
-			<div class="col-md-6 col-sm-12 col-12">
-				<div class="pr-45-md">
-					<img src="http://via.placeholder.com/510x505" class="rounded-border shadow-primary full-width" alt="img">
-				</div>
-			</div>					
-			<div class="col-md-6 col-sm-12 col-12">
-				<div class="section-heading left-holder mt-15" >
-					<h4 class="bold" style="color: #FFF">Where creativity meets technology. Open up your business to new possibilities.</h4>
-					<div class="section-heading-line"></div>
-				</div>
-
-				<div class="text-content-big">
-					<p style="color: #FFF">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse. Ut enim ad minim veniam.</p>
-				</div>
-
-				<!-- Pie Charts Start -->
-				<div class="row mt-30">
-					<div class="col-md-4 col-sm-4 col-12">
-						<div class="pie-chart">
-							<div class="chart-percent">
-								<span class="chart" data-percent="70" data-width="2" data-size="120" data-color="#00cc33" style="color: #FFF">
-									<span class="percent"></span>
-								</span>
-							</div>	
-							<h4 style="color: #FFF">Content Marketing</h4>
-						</div>		
-					</div>
-
-					<div class="col-md-4 col-sm-4 col-12">
-						<div class="pie-chart">
-							<div class="chart-percent">
-								<span class="chart" data-percent="80" data-width="2" data-size="120" data-color="#00cc33" style="color: #FFF">
-									<span class="percent"></span>
-								</span>
-							</div>
-							<h4 style="color: #FFF" >SEO Optimization</h4>
-						</div>		
-					</div>	
-
-					<div class="col-md-4 col-sm-4 col-12">
-						<div class="pie-chart">
-							<div class="chart-percent">
-								<span class="chart" data-percent="75" data-width="2" data-size="120" data-color="#00cc33" style="color: #FFF">
-									<span class="percent"></span>
-								</span>
-							</div>
-							<h4 style="color: #FFF">Web Development</h4>
-						</div>		
-					</div>													
-				</div>
-				<!-- Pie Charts End -->
-			</div>				
-		</div>		
-	</div>
-</div>
-<!-- Pie Charts Section END -->
-
 
 
 <!-- Portfolio Section START -->
-<div class="section-block">
+<div class="section-block" id="portafolio"
 	<div class="container">
 		<div class="section-heading center-holder">
 			<small>Tu partner Tecnologico</small>
@@ -452,42 +387,12 @@
 
 
 
-<!-- Background Section START -->
-<div class="section-block-bg right-position" style="background-image: url('http://via.placeholder.com/1500x630');">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6 col-sm-10 col-12 offset-md-6">
-				<div class="section-heading left-holder">
-					<h3 class="bold">Your Web Agency. We build intelligent and beautiful websites.</h3>
-					<div class="section-heading-line"></div>
-				</div>
-				<div class="text-content-big mt-10">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.</p>
-				</div>
-
-				<ul class="primary-list">
-					<li><i class="fa fa-check-circle"></i>Effective recruitment methodology, build successful teams</li>
-					<li><i class="fa fa-check-circle"></i>Strategic workforce planning, Office & Administrative</li>
-					<li><i class="fa fa-check-circle"></i>Relevant Business Knowledge, Remote Support</li>
-				</ul>
-
-				<div class="mt-30">
-					<a href="#" class="primary-button button-sm">Contact Us</a>
-				</div>	
-			</div>
-		</div>
-	</div>
-</div>		
-<!-- Background Section END -->
 
 
 
 
 <!-- Team Section START -->
-<div class="section-block">
+<div class="section-block" id="nosotros">
 	<div class="container">
 		<div class="section-heading center-holder">
 			<small>Conoce nuestro Equipo</small>
@@ -571,12 +476,12 @@
 
 
 <!-- Contact Form Section START -->
-<div class="section-block-grey">
+<div class="section-block-grey" id="tuproyecto">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-5 col-sm-6 col-12">
 				<div class="contact-form-md white-background shadow-primary">
-					<h5 class="center-holder">Let's talk about your Project.</h5>
+					<h5 class="center-holder">Explicanos tu Proyecto.</h5>
 					<!-- Form Start -->
 					<form method="get" action="#" class="mt-30">
 						<input type="text" name="name" placeholder="Your Name">
@@ -591,16 +496,12 @@
 			<div class="col-md-7 col-sm-6 col-12">
 				<div class="pl-45-md">
 					<div class="section-heading left-holder mt-25">
-						<h3 class="bold">Where expectations meet excellence! Professional web design experts.</h3>
+						<h3 class="bold">Cumpliremos tus expectativas! Somos Professional web design experts.</h3>
 						<div class="section-heading-line"></div>
 					</div>
 
 					<div class="text-content-big">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur.</p>					
+						<p>Explicanos tu Proyecto, en lo mas breve te contactaremos.</p>					
 					</div>
 
 					<!-- Contact icons Start -->
@@ -610,7 +511,7 @@
 								<div class="contact-icon-box-sm">
 									<i class="icon-mail"></i>
 									<h4>E-mail Adress</h4>
-									<h5>specthemes@gmail.com</h5>
+									<h5>karlalopezbello@gmail.com</h5>
 								</div>									
 							</div>						
 						</div>
@@ -619,7 +520,7 @@
 								<div class="contact-icon-box-sm">
 									<i class="icon-map"></i>
 									<h4>Our Location</h4>
-									<h5>New York, NY Sheram 113</h5>
+									<h5>Venezuela, Colombia, Chile, Panama, Mexico, España</h5>
 								</div>									
 							</div>						
 						</div>						
@@ -633,113 +534,22 @@
 <!-- Contact Form Section END -->
 
 
-
-<!-- Blog START -->
-<div class="section-block">
-	<div class="container">	
-		<div class="section-heading center-holder">
-			<small>Perfect & productive</small>
-			<h3 class="bold">Read Our Latest News</h3>
-			<div class="section-heading-line"></div>
-		</div>		
-
-		<div class="row mt-60">
-	 		<div class="col-md-4 col-sm-4 col-12">
-	 			<div class="blog-grid">
-	 				<strong>May 17, 2018</strong>
-	 				<h4><a href="#">We make up the news, so you don't have to!</a></h4>
-	 				<span>By <a href="#">SpecThemes</a></span> 
- 					<img src="http://via.placeholder.com/328x205" alt="img">
-	 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed diam sapien. Sed semper urna dict...</p>
-	 				<div class="blog-grid-button">
-	 					<a href="#">Read Article <i class="fa fa-angle-right"></i></a>
-	 				</div>
-	 			</div>
-	 		</div>
-
-	 		<div class="col-md-4 col-sm-4 col-12">
-	 			<div class="blog-grid">
-	 				<strong>May 17, 2018</strong>
-	 				<h4><a href="#">The goal isn't to build a website. The goal is to build your business.</a></h4>
-	 				<span>By <a href="#">SpecThemes</a></span> 
- 					<img src="http://via.placeholder.com/328x205" alt="img">
-	 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed diam sapien. Sed semper urna dict...</p>
-	 				<div class="blog-grid-button">
-	 					<a href="#">Read Article <i class="fa fa-angle-right"></i></a>
-	 				</div>
-	 			</div>
-	 		</div>
-
-	 		<div class="col-md-4 col-sm-4 col-12">
-	 			<div class="blog-grid">
-	 				<strong>May 17, 2018</strong>
-	 				<h4><a href="#">Digital thinking. We build intelligent and beautiful websites.</a></h4>
-	 				<span>By <a href="#">SpecThemes</a></span> 
- 					<img src="http://via.placeholder.com/328x205" alt="img">
-	 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed diam sapien. Sed semper urna dict...</p>
-	 				<div class="blog-grid-button">
-	 					<a href="#">Read Article <i class="fa fa-angle-right"></i></a>
-	 				</div>
-	 			</div>
-	 		</div>	
-		</div>	
-	</div>
-</div>
-<!-- Blog END -->
-
-
-
-<!-- Clients Carousel START -->
-<div class="section-block-grey section-sm">
-	<div class="container">
-        <div class="owl-carousel owl-theme clients" id="clients">
-            <div class="item">
-            	<img src="http://via.placeholder.com/125x35" alt="img">  
-            </div>	
-
-            <div class="item">
-            	<img src="http://via.placeholder.com/125x35" alt="img">  
-            </div>
-
-            <div class="item">
-            	<img src="http://via.placeholder.com/125x35" alt="img">  
-            </div>
-
-            <div class="item">
-            	<img src="http://via.placeholder.com/125x35" alt="img">  
-            </div>
-
-            <div class="item">
-            	<img src="http://via.placeholder.com/125x35" alt="img">  
-            </div>
-
-            <div class="item">
-            	<img src="http://via.placeholder.com/125x35" alt="img">  
-            </div>           
-        </div> 		
-	</div>
-</div>
-<!-- Clients Carousel END -->
-
-
-
-
 <!-- Footer START -->
-<footer class="footer-style-1">
+<footer class="footer-style-1" id="contactus">
 	<div class="container">
 		<div class="row">
 			<!-- Column 1 Start -->
 			<div class="col-md-4 col-sm-6 col-12">
 				<h3>About Us</h3>
-				<a href="#"><img src="img/content/business/logos/logo-footer.png" alt="img"></a>
+				<a href="#"><img src="img/logos/logo.png" alt="img"></a>
+				
 
 				<div class="mt-20">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.</p>	
+					<p>Tus Desarrolladores confiables</p>	
 				</div>
 				
 				<ul class="footer-style-1-social-links">
-					<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+					<li><a href="https://www.facebook.com/search/str/coderfriend/keywords_search"><i class="fab fa-facebook-square"></i></a></li>
 					<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
 					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
 					<li><a href="#"><i class="fab fa-pinterest"></i></a></li>
@@ -748,16 +558,7 @@
 			</div>
 			<!-- Column 1 End -->
 
-			<!-- Column 2 Start -->
-			<div class="col-md-3 col-sm-6 col-12">
-				<h3>Latest News</h3>
-				<ul class="footer-style-1-latest-news">
-					<li><span>30.03.2018</span><a href="#">Save Time & Money In Your Business</a></li>
-					<li><span>29.03.2018</span><a href="#">Excellent template with a very ...</a></li>
-					<li><span>28.03.2018</span><a href="#">Kudos design and code team!</a></li>
-				</ul>
-			</div>
-			<!-- Column 2 End -->
+			
 
 			<!-- Column 3 Start -->
 			<div class="col-md-3 col-sm-6 col-12">
