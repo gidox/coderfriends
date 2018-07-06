@@ -1,5 +1,24 @@
+<?php 
+if(isset($_POST['submit'])){
+    $to = "coderfriends@gmail.com"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $name = $_POST['name'];
+    $subject = "Contacto desde el sitio WEb";
+    $subject2 = "Contacto desde el sitio WEb";
+    $message = $name . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message " . $name . "\n\n" . $_POST['message'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you " . $name . ", we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    }
+?>
+
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="es">
 <head>
 	<title>CoderFriends | Desarrollo de Software y Mobile Apps</title>
 	<meta name="description" content="Especialistas en desarrollo de software, Diseño, aplicaciones móviles y todo lo relacionado con TI"/>
@@ -483,11 +502,11 @@
 				<div class="contact-form-md white-background shadow-primary">
 					<h5 class="center-holder">Explicanos tu Proyecto.</h5>
 					<!-- Form Start -->
-					<form method="get" action="#" class="mt-30">
-						<input type="text" name="name" placeholder="Your Name">
-						<input type="email" name="email" placeholder="Your Email">
-						<textarea name="message" placeholder="Your Message"></textarea>
-						<button type="submit" class="primary-button button-sm full-width">Send Message</button>						
+					<form method="post" action="" class="mt-30">
+						<input type="text" name="name" placeholder="Nombre">
+						<input type="email" name="email" placeholder="Correo">
+						<textarea name="message" placeholder="Mensaje"></textarea>
+						<button type="submit" class="primary-button button-sm full-width">Enviar</button>						
 					</form>
 					<!-- Form End -->
 				</div>
@@ -501,7 +520,7 @@
 					</div>
 
 					<div class="text-content-big">
-						<p>Explicanos tu Proyecto, en lo mas breve te contactaremos.</p>					
+						<p>Explicanos tu Proyecto, en lo más breve te contactaremos.</p>					
 					</div>
 
 					<!-- Contact icons Start -->
@@ -510,8 +529,8 @@
 							<div class="contact-icon-box-dark-color">
 								<div class="contact-icon-box-sm">
 									<i class="icon-mail"></i>
-									<h4>E-mail Adress</h4>
-									<h5>karlalopezbello@gmail.com</h5>
+									<h4>Dirección de correo</h4>
+									<h5>coderfriends@gmail.com</h5>
 								</div>									
 							</div>						
 						</div>
@@ -519,8 +538,8 @@
 							<div class="contact-icon-box-dark-color">
 								<div class="contact-icon-box-sm">
 									<i class="icon-map"></i>
-									<h4>Our Location</h4>
-									<h5>Venezuela, Colombia, Chile, Panama, Mexico, España</h5>
+									<h4>Nuestro Mercado</h4>
+									<h5>Panama, Venezuela, Colombia, Chile, Mexico, España</h5>
 								</div>									
 							</div>						
 						</div>						
@@ -540,8 +559,8 @@
 		<div class="row">
 			<!-- Column 1 Start -->
 			<div class="col-md-4 col-sm-6 col-12">
-				<h3>About Us</h3>
-				<a href="#"><img src="img/logos/logo.png" alt="img"></a>
+				<h3>Más de Nosotros</h3>
+				<a href="#"><img src="img/logos/coder_logo2.png" alt="img"></a>
 				
 
 				<div class="mt-20">
@@ -551,9 +570,6 @@
 				<ul class="footer-style-1-social-links">
 					<li><a href="https://www.facebook.com/search/str/coderfriend/keywords_search"><i class="fab fa-facebook-square"></i></a></li>
 					<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-					<li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-					<li><a href="#"><i class="fab fa-skype"></i></a></li>
 				</ul>
 			</div>
 			<!-- Column 1 End -->
@@ -562,29 +578,16 @@
 
 			<!-- Column 3 Start -->
 			<div class="col-md-3 col-sm-6 col-12">
-				<h3>Contact Info</h3>
+				<h3>Información de contacto</h3>
 				<ul class="footer-style-1-contact-info">
-					<li><i class="fa fa-phone"></i> <span>+11 (0) 123 456 7890</span></li>
-					<li><i class="fa fa-envelope-open"></i> <span>specthemes@gmail.com</span></li>
-					<li><i class="fa fa-map-marker-alt"></i> <span>New York, NY Sheram 113</span></li>
-					<li><i class="fa fa-phone-square"></i> <span>+11 (0) 123 456 7890</span></li>
+					<li><i class="fa fa-phone"></i> <span>+58 416-6926107</span></li>
+					<li><i class="fa fa-envelope-open"></i> <span>coderfriends@gmail.com</span></li>
+					<li><i class="fa fa-map-marker-alt"></i> <span>Estado Bolivar, Venezuela</span></li>
 				</ul>
 			</div>
 			<!-- Column 3 End -->
 
-			<!-- Column 4 Start -->
-			<div class="col-md-2 col-sm-6 col-12">
-				<h3>Quick Links</h3>
-				<ul class="footer-style-1-links">
-					<li><a href="#">Privacy Policy</a></li>
-					<li><a href="#">About Us</a></li>
-					<li><a href="#">Company History</a></li>
-					<li><a href="#">Recent Posts</a></li>
-					<li><a href="#">Our Services</a></li>
-					<li><a href="#">Contact Us</a></li>
-				</ul>
-			</div>		
-			<!-- Column 4 End -->										
+								
 		</div>
 	</div>
 
@@ -592,16 +595,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-sm-6 col-12">
-					<h5>SpecThemes © 2018. All Rights Reserved.</h5>
+					<h5>CoderFriends © 2018. All Rights Reserved.</h5>
 				</div>
 
-				<div class="col-md-6 col-sm-6 col-12">
-					<ul class="footer-style-1-bar-links">
-						<li><a href="#">Privacy Policy</a></li>
-						<li><a href="#">FAQ</a></li>
-						<li><a href="#">Contact Us</a></li>
-					</ul>
-				</div>
 			</div>
 		</div>
 	</div>
