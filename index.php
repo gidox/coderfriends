@@ -1,21 +1,42 @@
 <?php 
+$sent = 0;
 if(isset($_POST['email'])){
 
-	$to = "coderfriends@gmail.com"; // this is your Email address
-	$from = $_POST['email']; // this is the sender's Email address
-	$name = $_POST['name'];
-	$subject = "Contacto desde el sitio WEb";
-	$subject2 = "Contacto desde el sitio WEb";
-	$message = $name . " wrote the following:" . "\n\n" . $_POST['message'];
-	$message2 = "Here is a copy of your message " . $name . "\n\n" . $_POST['message'];
 
-	$headers = "From:" . $from;
-	$headers2 = "From:" . $to;
-	mail($to,$subject,$message,$headers);
-	mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
-	// echo "Mail Sent. Thank you " . $name . ", we will contact you shortly.";
-	// You can also use header('Location: thank_you.php'); to redirect to another page.
-	header('Location: thank_you.php');
+	$url = 'https://sendgrid.com/';
+	$user = 'coderfriends';
+	$pass = 'Mariana07!'; 
+	 
+	$params = array(
+			'api_user'  => $user,
+			'api_key'   => $pass,
+			'to'        => 'coderfriends@gmail.com',
+			'subject'   => 'Contacto desde el sitio WEB de '. $_POST['name'],
+			'html'      => $_POST['message'],
+			'text'      => $_POST['message'],
+			'from'      =>  $_POST['email'],
+		);
+	//  print_r($params);
+	 
+	$request =  $url.'api/mail.send.json';
+	 
+	// Generate curl request
+	$session = curl_init($request);
+	// Tell curl to use HTTP POST
+	curl_setopt ($session, CURLOPT_POST, true);
+	// Tell curl that this is the body of the POST
+	curl_setopt ($session, CURLOPT_POSTFIELDS, $params);
+	// Tell curl not to return headers, but do return the response
+	curl_setopt($session, CURLOPT_HEADER, false);
+	curl_setopt($session, CURLOPT_RETURNTRANSFER, true);
+	 
+	// obtain response
+	$response = curl_exec($session);
+	curl_close($session);
+	 
+	// print everything out
+	// print_r($response);
+	$sent = 1;
 }
 ?>
 
@@ -97,12 +118,12 @@ if(isset($_POST['email'])){
 		</div>
 		<div class="nav-menus-wrapper">
 			<ul class="nav-menu align-to-right">
-				<li><a href="index.php">Inicio</a></li>
-				<li><a href="#servicios">Servicios</a></li>								
-				<li><a href="#portafolio">Portafolio</a></li>
-				<li><a href="#nosotros">Nosotros</a></li>								
-				<li><a href="#tuproyecto">Tu Proyecto</a></li>								
-				<li><a href="#contactus">Contáctenos</a></li>								
+				<li><a href="./">Inicio</a></li>
+				<li><a data-scroll href="#servicios">Servicios</a></li>								
+				<li><a data-scroll href="#portafolio">Portafolio</a></li>
+				<li><a data-scroll href="#nosotros">Nosotros</a></li>								
+				<li><a data-scroll href="#tuproyecto">Tu Proyecto</a></li>								
+				<li><a data-scroll href="#tuproyecto">Contáctenos</a></li>								
 			</ul>
 		</div>					
 	</nav>	
@@ -122,7 +143,7 @@ if(isset($_POST['email'])){
 						<h2 class="extra-light uppercase animated fadeInDown">Agencia de Desarrollo WEB, Mobile APPS y Diseño</h2>
 						<h5 class="light uppercase animated fadeInUp">Creando soluciones efectivas y garantizadas.</h5>	
 						<div class="animated fadeInUp mt-30">
-								<a href="#" class="primary-button semi-rounded button-lg w-300">Empieza tu Proyecto</a>
+								<a data-scroll href="#tuproyecto" class="primary-button semi-rounded button-lg w-300">Empieza tu Proyecto</a>
 						</div>
 				</div>
 			</div>
@@ -137,7 +158,7 @@ if(isset($_POST['email'])){
 						<h2 class="extra-light uppercase animated fadeInDown">Desarrollamos Software Personalizado</h2>
 						<h5 class="light uppercase animated fadeInUp">Usamos las ultimas tendencias en desarrollo de sofware</h5>	
 						<div class="animated fadeInUp mt-30">
-								<a href="#" class="white-button semi-rounded button-lg w-300">Descubre Más</a>
+								<a data-scroll href="#tuproyecto" class="white-button semi-rounded button-lg w-300">Descubre Más</a>
 						</div>
 				</div>
 			</div>
@@ -150,9 +171,9 @@ if(isset($_POST['email'])){
 				<div class="slider-content center-holder mt-60-md">
 					<h4 class="extra-light uppercase animated fadeInDown">Te acesoramos en el desarrollo de tu idea</h4>
 						<h2 class="extra-light uppercase animated fadeInDown">Crea un MVP y sal al mercado</h2>
-						<h5 class="light uppercase animated fadeInUp">Digitally forward creative. Connected creativity. We are intelligence in action.</h5>	
+					
 						<div class="animated fadeInUp mt-30">
-								<a href="#" class="primary-button semi-rounded button-lg w-300">Contáctanos</a>
+								<a data-scroll href="#tuproyecto" class="primary-button semi-rounded button-lg w-300">Contáctanos</a>
 						</div>
 				</div>
 			</div>
@@ -275,6 +296,32 @@ if(isset($_POST['email'])){
 </div>
 <!-- Features Section END -->
 
+
+
+				<?php 
+					if($sent == 1){
+						?>
+						<!-- Modal Start -->
+						<div class="izimodal" id="modal8" data-iziModal-width="500px" data-iziModal-fullscreen="true" data-iziModal-autoOpen="3">
+							<!-- Close Button Start -->
+							<div class="close-modal">
+								<button class="close-modal" data-izimodal-close><i class="ti-close"></i></button>
+							</div>
+							<!-- Close Button Start -->
+							<!-- Modal Body Start -->
+							<div class="modal-inside inner-30 center-holder">
+								<div class="modal-heading">
+									<h4>Exitoso</h4>
+								</div>
+									<p>La gerente de proyectos ha recibido su peticion de contacto, se estará contactando con usted vía email en la mayor brevedad posible.</p>
+									<p>Muchas Gracias.</p>
+							</div>
+							<!-- Modal Body End -->
+						</div>	
+						<?php	
+					}
+
+				?>
 
 
 
@@ -427,10 +474,41 @@ if(isset($_POST['email'])){
 	 					<img src="./img/profiles/karla.jpg" alt="img">
 	 				</div>
 	 				<div class="team-circle-text">
-	 					<h4><a href="#">Karla López Bello</a></h4>
-	 					<h5 class="italic libre-baskerville">CEO, Fundadora.</h5>
+	 					<h4><a href="#">Karla L.</a></h4>
+	 					<h5 class="italic libre-baskerville">CEO, Founder.</h5>
 		 				<ul class="team-circle-social">
 		 					<li> <a href="https://www.linkedin.com/in/karlalopezbello/" target="_blank" rel="nofollow"><i class="fab fa-linkedin-in"></i></a></li>
+
+		 				</ul>
+	 				</div>
+	 			</div>
+	 		</div>
+
+	 		<div class="col-md-3 col-sm-6 col-12">
+	 			<div class="team-circle">
+	 				<div class="team-circle-img">
+	 					<img src="http://via.placeholder.com/157x157" alt="img">
+	 				</div>
+	 				<div class="team-circle-text">
+	 					<h4><a href="#">Adalberto F.</a></h4>
+	 					<h5 class="italic libre-baskerville">Senior developer</h5>
+		 				<ul class="team-circle-social">
+							<li> <a href="https://www.linkedin.com/in/karlalopezbello/" target="_blank" rel="nofollow"><i class="fab fa-linkedin-in"></i></a></li>
+
+		 				</ul>
+	 				</div>
+	 			</div>
+			 </div>
+	 		<div class="col-md-3 col-sm-6 col-12">
+	 			<div class="team-circle">
+	 				<div class="team-circle-img">
+	 					<img src="http://via.placeholder.com/157x157" alt="img">
+	 				</div>
+	 				<div class="team-circle-text">
+	 					<h4><a href="#">Patty P.</a></h4>
+	 					<h5 class="italic libre-baskerville">UI/UX Designer</h5>
+		 				<ul class="team-circle-social">
+							<li> <a href="https://www.linkedin.com/in/karlalopezbello/" target="_blank" rel="nofollow"><i class="fab fa-linkedin-in"></i></a></li>
 
 		 				</ul>
 	 				</div>
@@ -443,8 +521,8 @@ if(isset($_POST['email'])){
 	 					<img src="./img/profiles/andres.jpg" alt="img">
 	 				</div>
 	 				<div class="team-circle-text">
-	 					<h4><a href="#">Andres Eloy Monagas Medina</a></h4>
-	 					<h5 class="italic libre-baskerville">Especialista en Marketing</h5>
+	 					<h4><a href="#">Andres M.</a></h4>
+	 					<h5 class="italic libre-baskerville">Marketing Expert</h5>
 		 				<ul class="team-circle-social">
               <li> <a href="https://www.linkedin.com/in/andres-eloy-monagas-medina-2a6789143/" target="_blank" rel="nofollow"><i class="fab fa-linkedin-in"></i></a></li>
 
@@ -454,41 +532,9 @@ if(isset($_POST['email'])){
 	 			</div>
 	 		</div>
 
-	 		<div class="col-md-3 col-sm-6 col-12">
-	 			<div class="team-circle">
-	 				<div class="team-circle-img">
-	 					<img src="http://via.placeholder.com/157x157" alt="img">
-	 				</div>
-	 				<div class="team-circle-text">
-	 					<h4><a href="#">Alonso Nieves</a></h4>
-	 					<h5 class="italic libre-baskerville">Senior developer</h5>
-		 				<ul class="team-circle-social">
-		 					<li> <a href="#"><i class="fab fa-facebook-f"></i></a></li>
-		 					<li> <a href="#"><i class="fab fa-twitter"></i></a></li>
-		 					<li> <a href="#"><i class="fab fa-skype"></i></a></li>
-		 					<li> <a href="#"><i class="fab fa-google"></i></a></li>
-		 				</ul>
-	 				</div>
-	 			</div>
-	 		</div>
 
-	 		<div class="col-md-3 col-sm-6 col-12">
-	 			<div class="team-circle">
-	 				<div class="team-circle-img">
-	 					<img src="http://via.placeholder.com/157x157" alt="img">
-	 				</div>
-	 				<div class="team-circle-text">
-	 					<h4><a href="#">Martha John</a></h4>
-	 					<h5 class="italic libre-baskerville">Web Designer</h5>
-		 				<ul class="team-circle-social">
-		 					<li> <a href="#"><i class="fab fa-facebook-f"></i></a></li>
-		 					<li> <a href="#"><i class="fab fa-twitter"></i></a></li>
-		 					<li> <a href="#"><i class="fab fa-skype"></i></a></li>
-		 					<li> <a href="#"><i class="fab fa-google"></i></a></li>
-		 				</ul>
-	 				</div>
-	 			</div>
-	 		</div>
+
+
 		</div>			
 	</div>
 </div>
@@ -631,5 +677,12 @@ if(isset($_POST['email'])){
 <!-- Main JS -->
 <script src="js/main.js"></script>
 
+
+<script src="./js/smooth-scroll-master/dist/smooth-scroll.polyfills.min.js"></script>
+
+
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script>
 </body>
 </html>
