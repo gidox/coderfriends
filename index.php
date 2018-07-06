@@ -53,6 +53,10 @@ if(isset($_POST['email'])){
 	<meta charset="UTF-8">
 	<link rel="shortcut icon" href="img/logos/favicon.ico" />	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="./img/logos/logoog.png">
+	<meta property="og:type" content="article" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:locale:alternate" content="en_US" />
 
 	<!-- Bootstrap CSS-->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
