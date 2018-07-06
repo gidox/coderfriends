@@ -468,7 +468,7 @@ if(isset($_POST['email'])){
 	<div class="container">
 		<div class="section-heading center-holder">
 			<small>Conoce nuestro Equipo</small>
-			<h2 class="bold">Grupo de Profesionales apasionados por la Tecnologia</h2>
+			<h2 class="bold">Grupo de Profesionales apasionados por la Tecnología</h2>
 			<div class="section-heading-line"></div>
 		</div>			
 		<div class="row mt-50">
@@ -506,7 +506,7 @@ if(isset($_POST['email'])){
 	 		<div class="col-md-3 col-sm-6 col-12">
 	 			<div class="team-circle">
 	 				<div class="team-circle-img">
-	 					<img src="http://via.placeholder.com/157x157" alt="img">
+	 					<img src="./img/profiles/paty.jpg" alt="img">
 	 				</div>
 	 				<div class="team-circle-text">
 	 					<h4><a href="#">Patty P.</a></h4>
