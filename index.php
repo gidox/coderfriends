@@ -4,8 +4,8 @@ if(isset($_POST['email'])){
 
 
 	$url = 'https://sendgrid.com/';
-	$user = 'coderfriends';
-	$pass = 'Mariana07!'; 
+	$user = '';
+	$pass = ''; 
 	 
 	$params = array(
 			'api_user'  => $user,
