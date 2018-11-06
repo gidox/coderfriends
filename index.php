@@ -357,13 +357,13 @@ if(isset($_POST['email'])){
 				</a>					
 			</div>
 			<div class="col-md-4 col-sm-6 col-12">
-				<a href="#">
+				<a href="https://getliv.com/" rel="nofollow" target="_blank">
 					<div class="project-classic-3">
 						<img src="./img/content/portfolio/bellezpa.png" alt="bellezpa">
 						<div class="project-classic-overlay">
 							<div class="project-classic-content">
 								<div class="project-classic-content-inner">
-									<h3>Bellezpa - Startup Panameña</h3>
+									<h3>Liv - Startup Panameña</h3>
 									<h4>https://getliv.com/</h4>
 								</div>
 							</div>
@@ -372,7 +372,7 @@ if(isset($_POST['email'])){
 				</a>					
 			</div>
 			<div class="col-md-4 col-sm-6 col-12">
-				<a href="#">
+				<a href="https://chefsadomicilio.com/" rel="nofollow" target="_blank">
 					<div class="project-classic-3">
 						<img src="./img/content/portfolio/chefsadomicilio.png" alt="chefsadomicilio">
 						<div class="project-classic-overlay">
@@ -394,7 +394,6 @@ if(isset($_POST['email'])){
 							<div class="project-classic-content">
 								<div class="project-classic-content-inner">
 									<h3>Sun Company Design</h3>
-									<h4>www.exampe.com</h4>
 								</div>
 							</div>
 						</div>					
@@ -409,7 +408,6 @@ if(isset($_POST['email'])){
 							<div class="project-classic-content">
 								<div class="project-classic-content-inner">
 									<h3>Mark Ocean Design</h3>
-									<h4>www.exampe.com</h4>
 								</div>
 							</div>
 						</div>					
@@ -423,8 +421,7 @@ if(isset($_POST['email'])){
 						<div class="project-classic-overlay">
 							<div class="project-classic-content">
 								<div class="project-classic-content-inner">
-									<h3>Page Globe Design</h3>
-									<h4>www.exampe.com</h4>
+									<h3>Masajeador Plus App</h3>
 								</div>
 							</div>
 						</div>					
@@ -433,7 +430,7 @@ if(isset($_POST['email'])){
 			</div>	
 
 			<div class="col-md-4 col-sm-6 col-12">
-				<a href="#">
+				<a href="https://www.librotheke.com/" rel="nofollow" target="_blank">
 					<div class="project-classic-3">
 						<img src="./img/content/portfolio/tjpresentacion.jpg" alt="presentation">
 						<div class="project-classic-overlay">
@@ -441,6 +438,21 @@ if(isset($_POST['email'])){
 								<div class="project-classic-content-inner">
 									<h3>Librotheke - Startup Panameña</h3>
 									<h4>https://www.librotheke.com/</h4>
+								</div>
+							</div>
+						</div>					
+					</div>				
+				</a>					
+			</div>
+			<div class="col-md-4 col-sm-6 col-12">
+				<a href="https://fortesza.com/" rel="nofollow" target="_blank">
+					<div class="project-classic-3">
+						<img src="./img/content/portfolio/fortesza.png" alt="presentation">
+						<div class="project-classic-overlay">
+							<div class="project-classic-content">
+								<div class="project-classic-content-inner">
+									<h3>Fortesza - Startup Panameña</h3>
+									<h4>https://fortesza.com/</h4>
 								</div>
 							</div>
 						</div>					
@@ -620,7 +632,7 @@ if(isset($_POST['email'])){
 				</div>
 				
 				<ul class="footer-style-1-social-links">
-					<li><a href="https://www.facebook.com/search/str/coderfriend/keywords_search"><i class="fab fa-facebook-square"></i></a></li>
+					<!-- <li><a href="https://www.facebook.com/search/str/coderfriend/keywords_search"><i class="fab fa-facebook-square"></i></a></li> -->
 					<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
 				</ul>
 			</div>
@@ -634,7 +646,7 @@ if(isset($_POST['email'])){
 				<ul class="footer-style-1-contact-info">
 					<li><i class="fa fa-phone"></i> <span>+58 416-6926107</span></li>
 					<li><i class="fa fa-envelope-open"></i> <span>coderfriends@gmail.com</span></li>
-					<li><i class="fa fa-map-marker-alt"></i> <span>Estado Bolivar, Venezuela</span></li>
+
 				</ul>
 			</div>
 			<!-- Column 3 End -->
