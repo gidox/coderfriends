@@ -160,7 +160,7 @@ if(isset($_POST['email'])){
 				<div class="slider-content center-holder mt-60-md">
 					<h4 class="extra-light uppercase animated fadeInDown">Lleva tu idea a otro nivel</h4>
 						<h2 class="extra-light uppercase animated fadeInDown">Desarrollamos Software Personalizado</h2>
-						<h5 class="light uppercase animated fadeInUp">Usamos las ultimas tendencias en desarrollo de sofware</h5>	
+						<h5 class="light uppercase animated fadeInUp">Usamos las ultimas tendencias en desarrollo de software</h5>	
 						<div class="animated fadeInUp mt-30">
 								<a data-scroll href="#tuproyecto" class="white-button semi-rounded button-lg w-300">Descubre Más</a>
 						</div>
