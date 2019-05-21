@@ -173,7 +173,7 @@ if(isset($_POST['email'])){
 		<div class="swiper-slide black-overlay-70" style="background-image:url('./img/content/bgs/slide2.png');">
 			<div class="container">
 				<div class="slider-content center-holder mt-60-md">
-					<h4 class="extra-light uppercase animated fadeInDown">Te acesoramos en el desarrollo de tu idea</h4>
+					<h4 class="extra-light uppercase animated fadeInDown">Te asesoramos en el desarrollo de tu idea</h4>
 						<h2 class="extra-light uppercase animated fadeInDown">Crea un MVP y sal al mercado</h2>
 					
 						<div class="animated fadeInUp mt-30">
